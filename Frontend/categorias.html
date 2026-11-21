@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorías - Inventario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header><h1>📦 Sistema de Control de Inventario</h1></header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="equipos.html">Equipos</a>
+        <a href="categorias.html" class="active">Categorías</a>
+        <a href="prestamos.html">Préstamos</a>
+        <a href="solicitantes.html">Solicitantes</a>
+        <a href="usuarios.html">Usuarios Sistema</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Nueva Categoría</h2>
+            <form action="#" method="POST">
+                <div class="grid-form">
+                    <div class="form-group">
+                        <label>Nombre de Categoría *</label>
+                        <input type="text" name="nombre" placeholder="Ej. Cómputo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <input type="text" name="descripcion" placeholder="Equipos portátiles y de escritorio">
+                    </div>
+                </div>
+                <button type="submit">Guardar Categoría</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Categorías Registradas</h2>
+            <table>
+                <thead><tr><th>ID</th><th>Nombre</th><th>Descripción</th><th>Acciones</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>Cómputo</td><td>Laptops, PCs y tabletas</td><td><button class="btn-edit">Editar</button> <button class="btn-del">Eliminar</button></td></tr>
+                    <tr><td>2</td><td>Redes</td><td>Switches, routers y cableado</td><td><button class="btn-edit">Editar</button> <button class="btn-del">Eliminar</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
